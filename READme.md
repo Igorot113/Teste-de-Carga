@@ -16,7 +16,7 @@ Para que serve: Define o tempo que o JMeter levará para iniciar todos os usuár
 Para que serve: Define quantas vezes cada usuário virtual irá repetir o cenário de teste (conjunto de requisições) definido no Grupo de Usuários.
     Exemplo: Se você tem um loop de contagem de 5, cada um dos seus usuários virtuais executará o login, a busca e a compra (seu cenário) 5 vezes.
 
-<img src="GrupoDeUsuario.png" alt="Print do requisição HTTP do GET" width= "80%">
+<img src="Imagens/GrupoDeUsuario.png" alt="Print do requisição HTTP do GET" width= "80%">
 
 - - -
 ### Explicando a função do Padrões de Requisição HTTP
@@ -33,7 +33,7 @@ Ao configurações do Sampler HTTP Request:
 - Path: O caminho específico do recurso (ex: /api/usuarios, /produtos/123).
 - Body Data/Parameters: Para requisições POST, PUT ou PATCH, é onde você coloca os dados a serem enviados (geralmente JSON ou XML). 
 
-<img src="PadrõesdeRequisiçãoHTTP.png" alt="Print do requisição HTTP do GET" width= "80%">
+<img src="Imagens/PadrõesdeRequisiçãoHTTP.png" alt="Print do requisição HTTP do GET" width= "80%">
 
 - - -
 
@@ -63,7 +63,7 @@ Esta é a função mais crucial em testes de API:
 
 - Accept: Informa ao servidor o formato de dados esperado na resposta (geralmente também application/json ou application/xml).
 
-<img src="GerenciadordeCabeçalhosHTTP.png" alt="Print do gerenciador de cabeçalhos HTTP" width= "80%">
+<img src="Imagens/GerenciadordeCabeçalhosHTTP.png" alt="Print do gerenciador de cabeçalhos HTTP" width= "80%">
 
 - - -
 
@@ -83,7 +83,7 @@ Ao contrário de outros Listeners que focam em métricas agregadas (médias, thr
 
 Uso Ideal: É indispensável durante a criação e depuração do seu script para garantir que o JMeter está enviando as requisições corretas e recebendo as respostas esperadas. Deve ser desativado durante a execução de testes de carga de grande volume, pois consome muitos recursos da máquina.
 
-<img src="ÁrvoredeResultados.png" alt="Print da arvore de resultados" width= "80%">
+<img src="Imagens/ÁrvoredeResultados.png" alt="Print da arvore de resultados" width= "80%">
 
 - - -
 
@@ -105,7 +105,7 @@ Uma asserção é um "teste" dentro do seu teste de performance. Ela transforma 
 
 Uso Ideal: Devem ser adicionadas a cada requisição importante para garantir a integridade dos dados e simular um teste funcional antes de aplicar carga.
 
-<img src="AsserçõesdeResposta.png" alt="Print da asserção de resposta" width= "80%">
+<img src="Imagens/AsserçõesdeResposta.png" alt="Print da asserção de resposta" width= "80%">
 
 - - -
 
@@ -119,7 +119,7 @@ Uso no Teste de Carga:
 
 No JMeter, você define o corpo da requisição (Body Data) que contém os dados (geralmente JSON ou XML) que serão enviados ao servidor.
 
-<img src="RequisiçãoHTTPPOST.png" alt="Print do requisição HTTP do POST" width= "80%">
+<img src="Imagens/RequisiçãoHTTPPOST.png" alt="Print do requisição HTTP do POST" width= "80%">
 
 - - -
 
@@ -133,7 +133,7 @@ Uso no Teste de Carga:
 
 O método GET não deve alterar o estado do servidor e, idealmente, não deve ter corpo de requisição, passando dados apenas pela URL (como parâmetros de query).
 
-<img src="RequisiçãoHTTPGET.png" alt="Print do requisição HTTP do GET" width= "80%">
+<img src="Imagens/RequisiçãoHTTPGET.png" alt="Print do requisição HTTP do GET" width= "80%">
 
 - - -
 
@@ -149,7 +149,7 @@ Uso Ideal:
 
 Evitar Colisão: Garantir que dois usuários não tentem usar o mesmo ID ou nome ao mesmo tempo, o que pode ocorrer em cenários de criação de recursos (POST).
 
-<img src="VariávelAleatória.png" alt="Print da variavel aleatória" width= "80%">
+<img src="Imagens/VariávelAleatória.png" alt="Print da variavel aleatória" width= "80%">
 
 - - -
 
@@ -161,7 +161,7 @@ Uso no Teste de Carga:
 
 - Atualização Completa: Alterar todos os dados de um perfil de usuário, enviando a representação completa do novo recurso. Se algum campo for omitido, ele será geralmente apagado (comportamento de substituição).
 
-<img src="RequisiçãoHTTPPUT.png" alt="Print do requisição HTTP do PUT" width= "80%">
+<img src="Imagens/RequisiçãoHTTPPUT.png" alt="Print do requisição HTTP do PUT" width= "80%">
 
 - - -
 
@@ -187,7 +187,7 @@ Uso Ideal:
 
 - Controle de Loops: Usar o valor para limitar o número de iterações em um controlador lógico ou para acessar linhas específicas em um arquivo CSV.
 
-<img src="Contador.png" alt="Print do contador" width= "80%">
+<img src="Imagens/Contador.png" alt="Print do contador" width= "80%">
 
 - - -
 
@@ -199,4 +199,4 @@ Uso no Teste de Carga:
 
 - Limpeza de Dados: Excluir um item do carrinho, remover um produto ou deletar uma conta de usuário criada durante o teste.
 
-<img src="RequisiçãoHTTPDELETE.png" alt="Print do requisição HTTP do DELETE" width= "80%">
+<img src="Imagens/RequisiçãoHTTPDELETE.png" alt="Print do requisição HTTP do DELETE" width= "80%">
